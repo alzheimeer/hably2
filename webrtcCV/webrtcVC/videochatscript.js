@@ -1,7 +1,7 @@
 // Generate random room name if needed
-//const roomHash = prompt("XEnter room name");
+const roomHash = prompt("XEnter room name");
 const roomHash1 = JSON.parse(localStorage.getItem("roomx"));
-const roomHash = 'k'+ roomHash1;
+//const roomHash = 'k'+ roomHash1;
 if (!location.hash) {
     location.hash = roomHash;
 //  location.hash = Math.floor(Math.random() * 0xFFFFFF).toString(16);
