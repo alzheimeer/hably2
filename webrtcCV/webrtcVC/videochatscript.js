@@ -94,7 +94,12 @@ function startWebRTC(isOfferer) {
 
   navigator.mediaDevices.getUserMedia({
     audio: true,
-    video: true,
+    video: {
+
+      width: { min: 1024, ideal: 1280, max: 1920 },
+      height: { min: 600, ideal: 600, max: 900 }, 
+      aspectRatio: 4/3
+    }
   }).then(stream => {
     // Display your local video in #localVideo element
     

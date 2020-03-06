@@ -9,14 +9,15 @@
     body {
       display: flex;
       height: 100vh;
+      width: 100vw;
       margin: 0;
       align-items: center;
       justify-content: center;
-      padding: 0 50px;
+      padding: 0 0px;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     }
     video {
-      max-width: calc(30% - 100px);
+      max-width: calc(100% - 100px);
       margin: 0px 0px;
       box-sizing: border-box;
       border-radius: 2px;
@@ -39,8 +40,8 @@
   <button id ="start-call">Start Call</button>
   <div class="copy">Hably Video</div>
  
-  <video id="localVideo" width="200" autoplay></video>
-	<video id="remoteVideo" width="600" autoplay></video>
+  <video id="localVideo" width="100%" autoplay></video>
+	<video id="remoteVideo" width="100%" autoplay></video>
 
   
  
